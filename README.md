@@ -1,73 +1,24 @@
-# React + TypeScript + Vite
+💸 Personal Expense Tracker
+A lightweight and functional tool built for personal finance tracking. This application helps me monitor daily expenses, manage budgets, and visualize spending habits in a clean, minimal interface.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚧 Project Status: Work in Progress This project is currently under active development. I am working on adding more advanced features, data persistence, and refining the overall user experience.
 
-Currently, two official plugins are available:
+✨ Main Features
+Expense Logging: Quickly add and categorize new transactions.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Calendar expenses controll.
 
-## React Compiler
+Dynamic Calculations: Real-time balance and total spending updates.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Mobile-First UI: Responsive design crafted for seamless use on any device.
 
-## Expanding the ESLint configuration
+Type Safety: Built with a focus on robust code using TypeScript.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🏗️ Technology Stack
+Frontend: React 18 (Functional components).
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Styling: Tailwind CSS (Utility-first styling for rapid UI development).
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Language: TypeScript (Ensuring data integrity and better developer experience).
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+State Management: React Hooks (useState, useMemo).
